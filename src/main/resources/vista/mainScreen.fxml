@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prac1.controllers.MainScreenController">
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <ImageView fx:id="imagen" fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+            </center>
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="98.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="btnBucle" mnemonicParsing="false" onAction="#onActionBucle"> 
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnAleatori" mnemonicParsing="false" onAction="#onActionAleatori">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="prevSong" layoutX="234.0" layoutY="470.0" mnemonicParsing="false" onAction="#onActionPreviousSong">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnEndarrere" mnemonicParsing="false" onAction="#onActionEndarrere"> 
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnPlay" layoutX="317.0" layoutY="470.0" mnemonicParsing="false" onAction="#onActionPlay">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnPause" mnemonicParsing="false" onAction="#onActionPause"> 
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnStop" mnemonicParsing="false" onAction="#onActionStop"> 
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnEndevant" mnemonicParsing="false" onAction="#onActionEndevant"> 
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="segSong" layoutX="423.0" layoutY="470.0" mnemonicParsing="false" onAction="#onActionNextSong">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnMute" layoutX="381.0" layoutY="470.0" mnemonicParsing="false" onAction="#onActionMute">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </center>
+    <right>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <ListView fx:id="lv_1" prefHeight="456.0" prefWidth="256.0" style="-fx-text-color: #32174d;" BorderPane.alignment="CENTER" />
+            </center>
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="65.0" prefWidth="256.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="btnAddSong" mnemonicParsing="false" onAction="#onActionBtnAfegir">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDelSong" mnemonicParsing="false" onAction="#onActionBtnEliminar">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </right>
+</BorderPane>
